@@ -1,0 +1,1 @@
+Aquí es guardaran els documents de JavaScript per al videojoc.

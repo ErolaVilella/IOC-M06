@@ -1,0 +1,1 @@
+Aquí es guardaran els vídeos necessaris per al videojoc.

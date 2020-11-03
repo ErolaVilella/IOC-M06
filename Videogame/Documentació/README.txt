@@ -1,0 +1,1 @@
+Documentació per al videojoc.

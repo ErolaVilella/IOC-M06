@@ -1,0 +1,1 @@
+Aquí es guardaran els fitxers HTML per al videojoc.

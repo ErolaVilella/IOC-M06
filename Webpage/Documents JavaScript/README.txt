@@ -1,0 +1,1 @@
+Aquí es guardaran els documents de JavaScript per a la pàgina web.

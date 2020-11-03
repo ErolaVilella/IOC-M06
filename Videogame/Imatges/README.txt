@@ -1,0 +1,1 @@
+Aquí trobarem les imatges per al videojoc.
