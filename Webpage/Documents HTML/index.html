@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Nom_videojoc</title>
-        <link rel="stylesheet" href="css/style.css">
+        <title>Nom_videojoc</title> <!--Títol de la pàgina-->
+        <link rel="stylesheet" href="css/style.css"> <!--Link al document CSS-->
     </head>
     <body>
-        <div id="contenidor">
+        <div id="contenidor"> <!--Contenidor on hi trobarem el menú horitzontal i el desplegable-->
             <a href="index.html" >Inici</a>
-            <a href="videojoc.html" >Videojoc</a>
+            <a href="videojoc.html" >Videojoc</a> <!--Les tres opcions del menú horitzontal fetes amb href + link al fitxer html-->
             <a href="contacte.html" >Contacta'ns</a>
-            <select id="menu" name="menu_desplegable" onchange="location = this.value;">
+            <select id="menu" name="menu_desplegable" onchange="location = this.value;"> <!--Menú desplegable-->
                 <option value="" selected="selected"> - On vols anar? - </option>
                 <option value="index.html"> Inici </option>
                 <option value="videojoc.html"> Videojoc </option>
                 <option value="contacte.html"> Contacte </option>		
             </select> 
         </div>
-        <div class="titleimg">
-            <img id= "fons_inici" src="files/pixelart_fons_inici.png">
-            <div class="caption"> IN CRESCENDO </div>
+        <div class="titleimg"> <!-- contenidor amb la foto de la portada (li he donat un nom de classe, útil en el CSS)-->
+            <img id= "fons_inici" alt="(Posta de sol entre mig d'unes muntanyes)" src="files/pixelart_fons_inici.png"> <!--Títol de la imatge en concret, breu descripció i enllaç-->
+            <div class="caption"> IN CRESCENDO </div> <!--Text de la fotografia-->
         </div>
 
-        <h1 id="titol_inici">- NOVETATS -</h1>
+        <p class="inici_joc">EL JOC</p> <!--Primer paràgraf de la pàgina-->
+        <hr>
+
+        <h1 class="titol">- COMENÇA L'AVENTURA -</h1> <!--Títol o encapçalament del primer apartat de la pàgina d'Inici-->
+        <br><br>
+        <p class="inici_joc">In Crescendo és un joc de plataformes en 2D on el personatge haurà d'anar realitzant puzzles i nivells per a poder avançar.</p>
+        <p class="inici_joc">Recull ítems, dispara a monstres i guanya punts! Tot mentre vas amb compte de no caure al buit!</p> <!--Breu descripció del joc-->
         <br>
-        <h2>Informació destacada</h2>
+        <img class="promocioimg" alt="(Camp amb ciutat de fons)" src="files/paisatge1.png"> 
+        <br>
+        <img class="promocioimg" alt="(Desert)" src="files/paisatge2.jpg"> <!--Un parell d'imatges promocionals del joc. Les he tret d'internet i no són dels assets que utilitzaré perquè encara no tinc clar quins faré servir-->
+        <br>
+        <p id="disponibilitat">In Crescendo estarà disponible a partir del 18 de desembre.</p>
+        <br><br><br><br><br>
+        <footer class="footerini">Erola Vilella Sepúlveda | 13 de novembre de 2020 <br> M06 - Realització de projectes multimèdia interactius</footer> <!--Peu de pàgina-->
     </body>
 </html>

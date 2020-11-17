@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Nom_videojoc</title>
-        <link rel="stylesheet" href="css/style.css">
+        <title>Nom_videojoc</title> <!--Títol de la pàgina-->
+        <link rel="stylesheet" href="css/style.css"> <!--Enllaç al document CSS-->
     </head>
     <body>
-        <div id="contenidor">
+        <div id="contenidor"> <!--Contenidor amb els dos menús, tal i com he explicat a "index.html"-->
             <a href="index.html" >Inici</a>
             <a href="videojoc.html" >Videojoc</a>
             <a href="contacte.html" >Contacta'ns</a>
@@ -16,6 +16,16 @@
                 <option value="contacte.html"> Contacte </option>		
             </select> 
         </div>
-        <h1>Nom del videojoc</h1>
+        <br>
+        <h1 class="titol">- IN CRESCENDO -</h1> <!--Primer títol o encapçalament de la pàgina-->
+        <br>
+        <p class="inici_joc">In Crescendo és un joc de plataforma 2D on s'han de resoldre puzzles i matar enemics per a poder passar els nivells.</p>
+        <p class="inici_joc">Amb la teva pistola, hauràs de passar proves d'intelecte, de força i de velocitat que cada cop seran més complicades!</p>
+        <p class="inici_joc">A més, es podran recollir diversos ítems en el mapa de cada nivell que et podran ser d'ajuda en un futur,</p>
+        <p class="inici_joc">potser un escut, o una poció et serien d'utilitat!</p> <!--Breu descripció del joc feta en un paràgraf amb un nom de classe "inici_joc", utilitzat en el CSS-->
+        <br>
+        <video controls autoplay id="trailer" alt="Tráiler pixelart de In Crescendo" poster="files/postertrailer.png"> <!--Enllaç al vídeo amb la opció de autoplay activada, i una imatge del vídeo com a caàtula d'aquest, per a que no es vegi en negre-->
+            <source src="files/trailer.mp4" type="video/mp4"></video>
+        <footer>Erola Vilella Sepúlveda | 13 de novembre de 2020 <br> M06 - Realització de projectes multimèdia interactius</footer> <!--Peu de pàgina-->
     </body>
 </html>

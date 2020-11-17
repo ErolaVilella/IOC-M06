@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Contacta'ns</title>
-        <link rel="stylesheet" href="css/style.css">
+        <title>Contacta'ns</title> <!--Títol de la pàgina-->
+        <link rel="stylesheet" href="css/style.css"> <!--Enllaç al document CSS-->
     </head>
     <body>
-        <div id="contenidor">
+        <div id="contenidor"> <!--Contenidor amb els dos menus-->
             <a href="index.html" >Inici</a>
             <a href="videojoc.html" >Videojoc</a>
             <a href="contacte.html" >Contacta'ns</a>
@@ -16,20 +16,21 @@
                 <option value="contacte.html"> Contacte </option>		
             </select> 
         </div>
-        <h1 id="contactans">Contacta'ns!</h1>
-        <p id="text_contactans">Si tens qualsevol dubte i/o vols contactar amb nosaltres, pots contactar-nos a través d'aquest formulari!</p>
-        <form action="\action_page.php" id="formulari">
+        <br>
+        <h1 class="titol">- CONTACTA'NS! -</h1>
+        <p class="inici_joc">Si tens qualsevol dubte i/o vols contactar amb nosaltres, pots contactar-nos a través d'aquest formulari!</p>
+        <form action="\action_page.php" id="formulari"> <!--COmençament del formulari amb una ID anomenada "formulari", utilitzada en el CSS-->
             <p id="contacteform">Formulari de contacte</p>
             Afegeix el teu nom d'usuari:
-            <input type="text" name="nomdusuari" value="" />
+            <input type="text" name="nomdusuari" value="" required /> <!--Caixeta de text per a posar el nom d'usuari, és de caràcter obligatori (required)-->
             <br><br>
             Afageix la teva adreça:
-            <input type="text" name="adreca" value="" />
+            <input type="text" name="adreca" value="" required /> <!--Caixeta de text per a posar l'adreça, obligatoria-->
             <br><br>
             Ciutat:
-            <select id="ciutats" name="ciutats">
-                <option value="" selected="selected"> - Selecciona - </option>
-                <optgroup label="Barcelona">
+            <select id="ciutats" name="ciutats" required> <!--Menú desplegable amb opcions i subopcions per a triar la ciutat, obligatori-->
+                <option value="" selected="selected" > - Selecciona - </option> <!--Opció preseleccionada-->
+                <optgroup label="Barcelona"> <!--Opcions agrupades dins del grup "Barcalona, referint-me a la capital-->
                     <option value="vic"> Vic </option>
                     <option value="manresa"> Manresa </option>
                     <option value="bcn"> Barcelona </option>
@@ -37,49 +38,50 @@
                     <option value="granollers"> Granollers </option>
                     <option value="manlleu"> Manlleu </option>
                     <option value="sitges"> Sitges </option>
-                </optgroup>
-                <optgroup label="Tarragona">
+                </optgroup>                                                             <!--Acaba el grup "Barcelona-->
+                <optgroup label="Tarragona">                                            <!-- Grup de ciutats de Tarragona-->
                     <option value="tarragona"> Tarragona </option>
                     <option value="altafulla"> Altafulla </option>
                     <option value="arboc"> Arboç </option>
                     <option value="reus"> Reus </option>
                     <option value="querol"> Querol </option>
-                </optgroup>
-                <optgroup label= "Girona">
+                </optgroup>                                                             <!--Acaba el grup de Tarragona-->
+                <optgroup label= "Girona">                                              <!--Grup de ciutats de Girona-->
                     <option value="girona"> Girona </option>
                     <option value="besalu"> Besalú </option>
                     <option value="roses"> Roses </option>
                     <option value="vilovi"> Vilobí d'Onyar </option>
-                </optgroup>
-                <optgroup label="Lleida">
+                </optgroup>                                                             <!--Acaba el grup de Girona-->
+                <optgroup label="Lleida">                                               <!--grup de ciutats de Lleida-->
                     <option value="lleida"> Lleida </option>
                     <option value="bellver"> Bellver de Cerdanya </option>
                     <option value="guissona"> Guissona </option>
                     <option value="tremp"> Tremp </option>
-                </optgroup>
+                </optgroup>                                                             <!--Acaba el grup de Lleida-->
             </select>
             <br><br>
             Data de naixement:
-            <input type="date" name="datanaixement" value="" />
+            <input type="date" name="datanaixement" value="" required/> <!--caixeta en format de data obligatoria-->
             <br><br>
-            Sexe:
+            Sexe: <!--Es permet triar entre dues opcions, només es pot triar una, tipus "radiobutton"-->
             <br>
             Home
-            <input type="radio" name="sexe" value="Home" checked="checked" /> 
+            <input type="radio" name="sexe" value="Home" /> 
             <br>
             Dona
-            <input type="radio" name="sexe" value="Dona" />
+            <input id="dona" type="radio" name="sexe" value="Dona" checked="checked" /> <!--opció seleccionada per defecte-->
             <br><br>
             Correu electrònic:
-            <input type="email" name="email" value="" />
+            <input type="email" name="email" value="" required/> <!--Caixeta de email, obligatoria (si no té l'estructura d'email no l'agafa-->
             <br><br>
             Posa la teva contrasenya:
-            <input type="password" name="contra" value="" />
+            <input type="password" name="contra" value="" required/> <!--Caixeta de contrasenya, obligatoria (Caràcters tapats per un punt)-->
             <br><br>
             Accepto els termes i condicions d'ús 
-            <input type="checkbox" name="termes" value="" />
+            <input type="checkbox" name="termes" value="" required/> <!--Caixeta per a marcar (checkbox), obligatoria-->
             <br><br>
-            <input type="submit" value="Enviar" />
-            </form>
+            <input id="enviar" type="submit" value="Enviar" /> <!--Botó per a enviar el contingut de la pàgina i verificar-lo-->
+            </form>   
+        <footer>Erola Vilella Sepúlveda | 13 de novembre de 2020 <br> M06 - Realització de projectes multimèdia interactius</footer>
     </body>
 </html>
